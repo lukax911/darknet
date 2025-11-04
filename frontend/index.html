@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="active">
+        <div class="landing-container">
+            <div class="laptop">
+                <div class="laptop-screen">
+                    <div class="screen-glare"></div>
+                    <div class="screen-content">
+                        <img src="123456.jpg" alt="ASCII Art" class="laptop-ascii-art">
+                    </div>
+                </div>
+                <div class="laptop-base"></div>
+            </div>
+            <button id="access-btn" class="access-button">ACCESS TERMINAL</button>
+            <div class="social-buttons-landing">
+                <a href="#" class="social-icon-btn" id="x-btn-landing" data-link="">
+                    <svg viewBox="0 0 24 24" class="social-icon x-icon">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-btn" id="eagle-btn-landing" data-link="">
+                    <img src="eagle.svg" alt="Eagle" class="social-icon eagle-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Boot Sequence -->
+    <div id="boot-screen" class="boot-screen">
+        <div class="boot-content">
+            <div class="boot-logo">VOID_OS</div>
+            <div class="boot-text">
+                <p>> Initializing secure connection...</p>
+                <p>> Bypassing network restrictions...</p>
+                <p>> Loading encrypted filesystem...</p>
+                <p>> Establishing anonymous session...</p>
+                <p>> Access granted. Welcome to the void...</p>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Windows 98 Desktop -->
+    <div id="desktop" class="desktop">
+        <!-- Matrix Rain Background -->
+        <canvas id="matrix-canvas"></canvas>
+
+        <button id="wallet-button" class="wallet-button">CONNECT WALLET</button>
+
+        <!-- Desktop Icons -->
+        <div class="desktop-icons">
+            <div class="icon" data-category="hackers-hub">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Hackers Hub</span>
+            </div>
+            <div class="icon" data-category="drugs">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Drugs & Pharmacy</span>
+            </div>
+            <div class="icon" data-category="crypto">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3E$%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Crypto & Payments</span>
+            </div>
+            <div class="icon" data-category="operating-systems">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Operating Systems</span>
+            </div>
+            <div class="icon" data-category="identity">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Identity</span>
+            </div>
+            <div class="icon" data-category="email-jabber">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Email & Jabber</span>
+            </div>
+            <div class="icon" data-category="markets-exchanges">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Markets & Exchanges</span>
+            </div>
+            <div class="icon" data-category="information">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EI%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Information</span>
+            </div>
+            <div class="icon" data-category="news">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>News</span>
+            </div>
+            <div class="icon" data-category="forums">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Forums</span>
+            </div>
+            <div class="icon" data-category="services">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='4' y='2' width='24' height='28' stroke='%2300ff00' stroke-width='1'/%3E%3Crect fill='%23003300' x='6' y='4' width='20' height='3'/%3E%3Crect fill='%23000000' x='6' y='8' width='20' height='20'/%3E%3Ctext x='16' y='20' font-family='monospace' font-size='12' fill='%2300ff00' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E" alt="folder">
+                <span>Services</span>
+            </div>
+            <div class="icon" data-category="readme">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23001100' stroke='%2300ff00' stroke-width='1' d='M6 2h14l6 6v22H6z'/%3E%3Cpath fill='%23003300' d='M20 2v6h6z'/%3E%3Cline x1='10' y1='14' x2='22' y2='14' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='10' y1='18' x2='22' y2='18' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='10' y1='22' x2='18' y2='22' stroke='%2300ff00' stroke-width='1'/%3E%3C/svg%3E" alt="file">
+                <span>README.txt</span>
+            </div>
+        </div>
+
+        <!-- Social Buttons Desktop -->
+        <div class="social-buttons-desktop">
+            <a href="#" class="social-icon-btn-desktop" id="x-btn-desktop" data-link="">
+                <svg viewBox="0 0 24 24" class="social-icon-desktop x-icon">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>X</span>
+            </a>
+            <a href="#" class="social-icon-btn-desktop" id="eagle-btn-desktop" data-link="">
+                <img src="eagle.svg" alt="Eagle" class="social-icon-desktop eagle-icon">
+                <span>Eagle</span>
+            </a>
+        </div>
+
+        <!-- Trash Icon -->
+        <div class="trash-icon" id="trash-icon">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23001100' x='8' y='10' width='16' height='18' stroke='%2300ff00' stroke-width='1' rx='2'/%3E%3Crect fill='%23003300' x='6' y='8' width='20' height='3' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='12' y1='8' x2='12' y2='6' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='20' y1='8' x2='20' y2='6' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='12' y1='14' x2='12' y2='24' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='16' y1='14' x2='16' y2='24' stroke='%2300ff00' stroke-width='1'/%3E%3Cline x1='20' y1='14' x2='20' y2='24' stroke='%2300ff00' stroke-width='1'/%3E%3C/svg%3E" alt="trash">
+            <span>Trash</span>
+        </div>
+
+        <!-- Taskbar -->
+        <div class="taskbar">
+            <div class="start-button">
+                <span class="start-logo"></span>
+                Start
+            </div>
+            <div class="taskbar-separator"></div>
+            <div class="taskbar-items"></div>
+            <div class="system-tray">
+                <span class="connection-status" id="connection-status">
+                    <span class="status-dot"></span>
+                    SECURE
+                </span>
+                <span class="tray-separator">|</span>
+                <span class="time" id="time">12:00 PM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning Dialog -->
+    <div id="warning-dialog" class="dialog-overlay">
+        <div class="dialog-box">
+            <div class="dialog-title-bar">
+                <span class="dialog-title">⚠ SECURITY WARNING</span>
+                <button class="dialog-close" id="dialog-close">×</button>
+            </div>
+            <div class="dialog-content">
+                <div class="warning-icon">⚠</div>
+                <div class="warning-text">
+                    <p><strong>WARNING: UNAUTHORIZED ACCESS DETECTED</strong></p>
+                    <p>You are accessing a restricted network.</p>
+                    <p>All activities are monitored and logged.</p>
+                    <p>By proceeding, you accept all risks and consequences.</p>
+                </div>
+            </div>
+            <div class="dialog-buttons">
+                <button class="dialog-btn" id="dialog-accept">I ACCEPT</button>
+                <button class="dialog-btn dialog-btn-cancel" id="dialog-decline">DISCONNECT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Window Template -->
+    <div id="window-template" class="window" style="display: none;">
+        <div class="title-bar">
+            <div class="title-bar-text">Folder</div>
+            <div class="title-bar-controls">
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
+            </div>
+        </div>
+        <div class="window-menubar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>View</span>
+            <span>Help</span>
+        </div>
+        <div class="window-content">
+            <div class="folder-content"></div>
+        </div>
+        <div class="status-bar">
+            <span class="status-text">Ready</span>
+        </div>
+    </div>
+
+    <script src="files/readme.js"></script>
+    <script src="files/operatingSystems.js"></script>
+    <script src="files/hackersHub.js"></script>
+    <script src="files/drugs.js"></script>
+    <script src="files/crypto.js"></script>
+    <script src="files/identity.js"></script>
+    <script src="files/emailJabber.js"></script>
+    <script src="files/markets.js"></script>
+    <script src="files/information.js"></script>
+    <script src="files/news.js"></script>
+    <script src="files/forums.js"></script>
+    <script src="files/services.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
