@@ -1,7 +1,7 @@
 // External links used across the UI (update these when real URLs are ready)
 const SOCIAL_URLS = {
-    x: 'https://www.google.com',
-    dex: 'https://www.google.com'
+    x: 'https://x.com/watchghostnet',
+    dex: 'https://pump.fun/coin/zCrGLr8cK6cp33rycW8njU2oiHcuYSpmJb7YDi7pump'
 };
 
 // Basic Solana address validation (Base58, 32-44 chars)
